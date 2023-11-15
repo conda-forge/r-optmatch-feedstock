@@ -1,4 +1,4 @@
-{% set version = '0.10.6' %}
+{% set version = "0.10.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/optmatch_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/optmatch/optmatch_{{ version }}.tar.gz
-  sha256: 2b7661567fdfbdb39dae3779b4b7dea2b9eb759d3117311b3a7936b10cce1d35
+  sha256: 330fc251ebe6901a6fbf931457943ee113bc882f786b2b14d837cd59f4327d1d
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -58,12 +58,8 @@ test:
 about:
   home: http://optmat.ch, https://github.com/markmfredrickson/optmatch
   license: MIT
-  summary: Distance based bipartite matching using minimum cost flow, oriented to matching of
-    treatment and control groups in observational studies ('Hansen' and 'Klopfer' 2006
-    <doi:10.1198/106186006X137047>). Routines are provided to generate distances from
-    generalised linear models (propensity score matching), formulas giving variables
-    on which to limit matched distances, stratified or exact matching directives, or
-    calipers, alone or in combination.
+  summary: Distance based bipartite matching using minimum cost flow, oriented to matching of treatment and control groups in observational studies ('Hansen' and 'Klopfer' 2006 <doi:10.1198/106186006X137047>). Routines are provided to generate distances from generalised linear models (propensity score matching), formulas
+    giving variables on which to limit matched distances, stratified or exact matching directives, or calipers, alone or in combination.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
