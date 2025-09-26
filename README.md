@@ -211,5 +211,4 @@ Feedstock Maintainers
 =====================
 
 * [@conda-forge/r](https://github.com/orgs/conda-forge/teams/r/)
-* [@lightning-auriga](https://github.com/lightning-auriga/)
 
