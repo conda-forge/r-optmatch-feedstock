@@ -67,7 +67,6 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - lightning-auriga
 
 # Package: optmatch
 # Version: 0.10.6
